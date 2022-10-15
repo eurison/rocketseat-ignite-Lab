@@ -14,7 +14,7 @@ export default {
       handlers: [
         rest.post('/sessions', (req, res, ctx) => {
           return res(ctx.json({
-            messge: 'Login realizado'
+            message: 'Login Realizado'
           }))
         })
       ],
@@ -27,12 +27,12 @@ export const Default: StoryObj = {
     const canvas = within(canvasElement)
 
     userEvent.type(canvas.getByPlaceholderText('Digite seu e-mail'), 'eurisonfbarbosa@gmail.com')
-    userEvent.type(canvas.getByPlaceholderText("password"), "12345678")
+    userEvent.type(canvas.getByPlaceholderText("************"), "12345678")
 
     userEvent.click(canvas.getByRole('button'))
 
     await waitFor(() => {
-      return expect(canvas.getByText('login realizado com sucesse!')).toBeInTheDocument()
+      return expect(canvas.getByText('login realizado!')).toBeInTheDocument()
 
     })
   }

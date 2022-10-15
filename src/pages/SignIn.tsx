@@ -33,7 +33,7 @@ export function SignIn() {
         <a href="">IgniteLab <span>|</span> <span id='force'>REACT</span></a>
       </Heading>
 
-      <Text size="lg" className='text-gray-400 mt-1'>Faça login e comece usar a Platarforma!</Text>
+      <Text size="lg" className='text-gray-400 mt-1'> Faça login e comece usar!</Text>
     </header>
 
     <form  onSubmit={handleSingIn} className='flex flex-col gap-4 items-stretch w-full max-w-sm mt-10'>
